@@ -1,6 +1,6 @@
 import { colors } from "@/styles/colors";
 import { MaterialIcons } from "@expo/vector-icons";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Alert, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
 import { router } from "expo-router";
 import Categories from "@/components/categories";
@@ -14,7 +14,17 @@ export default function Add() {
   const [url, setUrl] = useState('')
 
   function handleAdd() {
-    console.log({name, url})
+    if (!category) {
+      return Alert.alert('Categoria','Selecione uma categoria')
+    }
+    if (!name.trim()) {
+      return Alert.alert('Nome','Informe o nome')
+    }
+    if (!url) {
+      return Alert.alert('URL','Informe a URL')
+    }
+
+    console.log({category, name, url})
   }
 
   return (
