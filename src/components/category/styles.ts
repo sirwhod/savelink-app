@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 16,
     fontWeight: "bold",
-    color: colors.gray[400]
   }
 })
 
