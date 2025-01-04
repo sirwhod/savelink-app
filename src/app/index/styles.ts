@@ -1,6 +1,5 @@
 import { colors } from "@/styles/colors";
 import { StyleSheet } from "react-native";
-import { Header } from "react-native/Libraries/NewAppScreen";
 
 const styles = StyleSheet.create({
   container: {
@@ -23,6 +22,15 @@ const styles = StyleSheet.create({
     width: 32,
     height: 38,
   },
+  links: {
+    borderTopWidth: 1,
+    borderTopColor: colors.gray[600],
+  },
+  linksContent: {
+    gap: 20,
+    padding: 24,
+    paddingBottom: 100,
+  }
 })
 
 export default styles;
