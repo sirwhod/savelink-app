@@ -1,14 +1,14 @@
 # SaveLink App 📱
 
 <p align="center">
-  <img src="./assets/images/icon.png" alt="SaveLink Logo" width="200"/>
+  <img src="./assets/images/icon.png" alt="SaveLink Logo" style="border-radius: 10px" width="200"/>
 </p>
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
 [![Expo](https://img.shields.io/badge/Expo-000020?style=flat&logo=expo&logoColor=white)](https://expo.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-<img src="./assets/images/tag.png" width="125" alt="Tag"/>
+<img src="./assets/images/tag.png" width="125" style="border-radius: 5px" alt="Tag"/>
 
 ## 💡 Sobre o Projeto
 
@@ -36,8 +36,8 @@ SaveLink é um aplicativo moderno para gerenciamento de links, permitindo organi
 ## 📱 Screenshots
 
 <p align="center">
-  <img src="./assets/images/home-page.jpeg" width="200" alt="Tela Inicial"/>
-  <img src="./assets/images/add-link.jpeg" width="200" alt="Adicionar Link"/>
+  <img src="./assets/images/home-page.jpeg" width="200" style="border-radius: 5px" alt="Tela Inicial"/>
+  <img src="./assets/images/add-link.jpeg" width="200" style="border-radius: 5px" alt="Adicionar Link"/>
 </p>
 
 ## 🚀 Como Executar
