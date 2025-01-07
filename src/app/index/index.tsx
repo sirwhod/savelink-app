@@ -1,4 +1,4 @@
-import { FlatList, Image, Modal, TouchableOpacity, View, Text, Alert } from 'react-native'
+import { FlatList, Image, Modal, TouchableOpacity, View, Text, Alert, Linking } from 'react-native'
 import styles from './styles'
 import { MaterialIcons } from '@expo/vector-icons'
 import { colors } from '@/styles/colors'
@@ -52,6 +52,16 @@ export default function Index() {
     ])
   }
 
+  async function handleOpen() {
+    try {
+      await Linking.openURL(link.url)
+      setShowModal(!showModal)
+    } catch (error) {
+      Alert.alert("Erro", "Não foi possível abrir o link")
+      console.error(error)
+    }
+  }
+
   useFocusEffect(useCallback(() => {
     getLinks()
   }, [category]))
@@ -99,8 +109,8 @@ export default function Index() {
             <Text style={styles.modalUrl}>{link.url}</Text>
 
             <View style={styles.modalFooter}>
-              <Option name='Excluir' icon='delete' variant="secondary" onPress={handleRemove}/>
-              <Option name='Abrir' icon='language' />
+              <Option name='Excluir' icon='delete' variant="secondary" onPress={handleRemove} />
+              <Option name='Abrir' icon='language' onPress={handleOpen} />
             </View>
           </View>
         </View>
